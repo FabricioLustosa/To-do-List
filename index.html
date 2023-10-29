@@ -13,14 +13,16 @@
         <div class="input-button">
           <input
             type="text"
-            class="input"
+            id="input"
             placeholder="Digite uma tarefa para adicionar"
-          /><button id="add-button">Add</button>
+          />
+          <button id="add-button" onclick="addTask()">Add</button>
         </div>
         <section class="tasks">
-          <h3>Aqui abaixo vai aparecer suas tarefas...</h3>
+          <h3 id="text-alert">Aqui abaixo vai aparecer suas tarefas...</h3>
           <div id="tasks-list"></div>
         </section>
+        <script src="js/to-do.js"></script>
       </main>
     </div>
   </body>

@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
 /* Cores
-#0A2463, #f63e02, #18a999,  rgb(6, 12, 31)
+#0A2463, #fb3640, #18a999,  rgb(6, 12, 31)
 */
 * {
   margin: 0;
@@ -22,9 +22,9 @@ h1 {
   margin: 50px 0;
   font-weight: 800;
   font-size: 3rem;
-  /* margin-bottom: 20px; */
-  color: #18a999;
-  /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.73); */
+
+  color: #fb3640;
+
   text-transform: uppercase;
 }
 .align {
@@ -54,7 +54,7 @@ main {
   justify-content: space-around;
 }
 
-.input {
+#input {
   padding: 10px;
   border-radius: 10px;
   background-color: rgb(225, 225, 225);
@@ -63,12 +63,12 @@ main {
   border: none;
   transition: all 0.5s;
 }
-.input:hover {
+#input:hover {
   background-color: white;
   /* background-color: #6f5b45; */
   transform: scale(1.02);
 }
-.input::placeholder {
+#input::placeholder {
   color: black;
 }
 #add-button {
