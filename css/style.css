@@ -16,61 +16,70 @@ body {
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  background-color: #18a999;
+  background-color: #0a2463;
 }
 h1 {
+  margin: 50px 0;
   font-weight: 800;
-  margin-bottom: 20px;
-  color: white;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.73);
+  font-size: 3rem;
+  /* margin-bottom: 20px; */
+  color: #18a999;
+  /* text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.73); */
   text-transform: uppercase;
 }
 .align {
   display: flex;
   text-align: center;
-  align-items: center;
   justify-content: center;
-  margin: 0 auto;
-  width: 50%;
-  height: 50%;
-  max-width: 500px;
+  align-items: center;
+  width: 70%;
+  height: 70%;
+  max-width: 1280px;
   border-radius: 10px;
-  background-color: #edcb96;
-  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.572);
-  /* padding: 50px; */
+  background-color: rgb(6, 12, 31);
+  /* box-shadow: 3px 5px 5px #62946080; */
 }
 main {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
-  width: 100vw;
-  height: 11vh;
+  width: 75%;
+  height: 100%;
 }
 .input-button {
-  width: 75%;
+  width: 100%;
   display: flex;
+  gap: 15px;
   justify-content: space-around;
 }
+
 .input {
-  color: white;
   padding: 10px;
   border-radius: 10px;
-  background-color: #423629;
-  width: 65%;
+  background-color: rgb(225, 225, 225);
+  width: 100%;
   outline: none;
   border: none;
+  transition: all 0.5s;
+}
+.input:hover {
+  background-color: white;
+  /* background-color: #6f5b45; */
+  transform: scale(1.02);
 }
 .input::placeholder {
-  color: rgb(165, 165, 165);
+  color: black;
 }
 #add-button {
+  color: white;
+  background-color: #fb3640;
   text-transform: uppercase;
   border: none;
   outline: none;
   padding: 10px;
   border-radius: 10px;
-  width: 30%;
+  width: 25%;
   font-weight: 700;
   font-size: 1em;
   cursor: pointer;
@@ -80,4 +89,23 @@ main {
   color: white;
   background-color: #18a999;
   transform: scale(1.05);
+}
+.tasks {
+  margin-top: 50px;
+  height: 85%;
+  width: 100%;
+}
+.tasks h3 {
+  border-radius: 10px;
+  background-color: #fb3640;
+  color: white;
+  margin-bottom: 50px;
+  padding: 5px 12px;
+}
+#tasks-list {
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.347);
+  height: 60%;
+  width: 100%;
 }
