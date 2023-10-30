@@ -1,9 +1,9 @@
-const localStorageKey = "to-do-list-gn";
+const localStorageKey = "to-do-list-fl";
 
 function validadeIfExistNewTask() {
-  let values = JSON.parse(localStorage.getItem(localStorageKey) || "[]");
+  let values = JSON.parse(localStorage.getItem(localStorageKey) || "[]"); // obtém os dados da lista de tarefas do localStorage, converte esses dados em um objeto JavaScript e, se não houver dados salvos, inicia a variável values com um array vazio.
   let inputValue = document.getElementById("input").value;
-  let exists = values.find((x) => x.name == inputValue);
+  let exists = values.find((x) => x.name == inputValue); //verifica se já existe uma tarefa com o mesmo nome daquilo que foi digitado no campo de entrada (inputValue).
   return !exists ? false : true;
 }
 
@@ -23,11 +23,12 @@ function addTask() {
     textAlert.innerHTML = "Já existe uma task com essa descrição";
   } else {
     // incrementando no loocal storage
-    let values = JSON.parse(localStorage.getItem(localStorageKey) || "[]");
+    let values = JSON.parse(localStorage.getItem(localStorageKey) || "[]"); //JSON.parse() usado para converter string json em objetos javascript. Isso possibilitou que eu usasse o .push no values.
     values.push({
       name: input.value,
     });
-    localStorage.setItem(localStorageKey, JSON.stringify(values));
+    localStorage.setItem(localStorageKey, JSON.stringify(values)); //.setItem () é uma chamada ao método setItem do localStorage.
+    //JSON.stringfy -> Antes de armazenar os dados, eles são convertidos em uma string JSON usando a função JSON.stringify()
     showValues();
 
     textAlert.innerHTML = "Aqui abaixo vai aparecer suas tarefas...";
