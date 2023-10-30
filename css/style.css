@@ -28,6 +28,7 @@ h1 {
   text-transform: uppercase;
 }
 .align {
+  flex-wrap: wrap;
   display: flex;
   text-align: center;
   justify-content: center;
@@ -41,6 +42,7 @@ h1 {
 }
 main {
   display: flex;
+  /* flex-wrap: wrap; */
   flex-direction: column;
   /* justify-content: center; */
   align-items: center;
@@ -91,15 +93,20 @@ main {
   transform: scale(1.05);
 }
 .tasks {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
   margin-top: 50px;
-  height: 85%;
+  margin-bottom: 50px;
+  height: 50%;
   width: 100%;
 }
 .tasks h3 {
+  font-size: 1.5rem;
   border-radius: 10px;
   background-color: #fb3640;
   color: white;
-  margin-bottom: 50px;
+  /* margin-bottom: 90px; */
   padding: 5px 12px;
 }
 #tasks-list {
@@ -108,4 +115,36 @@ main {
   box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.347);
   height: 60%;
   width: 100%;
+}
+
+@media screen and (max-width: 990px) {
+  .tasks h3 {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .align {
+    height: 90%;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+  .input-button {
+    flex-direction: column;
+    align-items: center;
+  }
+  #add-button {
+    width: 100%;
+  }
+  .tasks h3 {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  h1 {
+    font-size: 2rem;
+  }
 }
