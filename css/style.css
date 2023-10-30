@@ -22,9 +22,7 @@ h1 {
   margin: 50px 0;
   font-weight: 800;
   font-size: 3rem;
-
   color: #fb3640;
-
   text-transform: uppercase;
 }
 .align {
@@ -38,13 +36,10 @@ h1 {
   max-width: 1280px;
   border-radius: 10px;
   background-color: rgb(6, 12, 31);
-  /* box-shadow: 3px 5px 5px #62946080; */
 }
 main {
   display: flex;
-  /* flex-wrap: wrap; */
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   width: 75%;
   height: 100%;
@@ -67,7 +62,6 @@ main {
 }
 #input:hover {
   background-color: white;
-  /* background-color: #6f5b45; */
   transform: scale(1.02);
 }
 #input::placeholder {
@@ -106,7 +100,6 @@ main {
   border-radius: 10px;
   background-color: #fb3640;
   color: white;
-  /* margin-bottom: 90px; */
   padding: 5px 12px;
 }
 #tasks-list {
